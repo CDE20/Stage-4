@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+	<bean id="dpt1" class="com.cognizant.springlearn.model.Department">
+		<property name="name" value="dpt1" />
+	</bean>
+	<bean id="dpt2" class="com.cognizant.springlearn.model.Department">
+		<property name="name" value="dpt2" />
+	</bean>
+	<bean id="dpt3" class="com.cognizant.springlearn.model.Department">
+		<property name="name" value="dpt3" />
+	</bean>
+
+
+
+	<bean id="emp1" class="com.cognizant.springlearn.model.Employee">
+		<property name="name" value="emp1" />
+		<property name="department" ref="dpt1" />
+	</bean>
+	<bean id="emp2" class="com.cognizant.springlearn.model.Employee">
+		<property name="name" value="emp2" />
+		<property name="department" ref="dpt1" />
+	</bean>
+	<bean id="emp3" class="com.cognizant.springlearn.model.Employee">
+		<property name="name" value="emp3" />
+		<property name="department" ref="dpt2" />
+	</bean>
+	<bean id="emp4" class="com.cognizant.springlearn.model.Employee">
+		<property name="name" value="emp4" />
+		<property name="department" ref="dpt3" />
+	</bean>
+	<bean id="emp5" class="com.cognizant.springlearn.model.Employee">
+		<property name="name" value="emp5" />
+		<property name="department" ref="dpt3" />
+	</bean>
+
+
+
+	<bean id="employees" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="emp1"></ref>
+				<ref bean="emp2"></ref>
+				<ref bean="emp3"></ref>
+				<ref bean="emp4"></ref>
+				<ref bean="emp5"></ref>
+			</list>
+		</constructor-arg>
+	</bean>
+	
+	<bean id="departments" class="java.util.ArrayList">
+		<constructor-arg>
+			<list>
+				<ref bean="dpt1"></ref>
+				<ref bean="dpt2"></ref>
+				<ref bean="dpt3"></ref>
+			</list>
+		</constructor-arg>
+	</bean>
+
+</beans>
