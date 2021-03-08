@@ -1,0 +1,11 @@
+com\cognizant\repository\MenuRepository.class
+com\cognizant\ormlearn\Truyum.class
+com\cognizant\dao\MenuItemDaoSqlImpl.class
+com\cognizant\dao\MenuItemDaoCollectionImpl.class
+com\cognizant\model\MenuItem.class
+com\cognizant\dao\MenuItemDaoCollectionImplTest.class
+com\cognizant\service\MenuItemService.class
+com\cognizant\dao\ConnectionHandler.class
+com\cognizant\dao\MenuItemDaoSqlImplTest.class
+com\cognizant\model\DateUtil.class
+com\cognizant\dao\MenuItemDao.class
