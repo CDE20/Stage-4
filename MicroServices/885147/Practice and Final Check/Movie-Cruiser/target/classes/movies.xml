@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="m01" class="com.practicecheck.MovieCruiser.model.movie" >
+<property name="moviename" value="Frozen"/>
+<property name="boxoffice" value="100 Crore" />
+<property name="genere" value="Fantasy,Drama"/>
+<property name="status" value="active"/>
+<property name="Launch" value="27/03/2019"/>
+<property name="favourite" value="Yes"/>
+</bean>
+<bean id="m02" class="com.practicecheck.MovieCruiser.model.movie" >
+<property name="moviename" value="Majili"/>
+<property name="boxoffice" value="100 Crore" />
+<property name="genere" value="Drama,Romance"/>
+<property name="status" value="In-active"/>
+<property name="Launch" value="18/12/2018"/>
+<property name="favourite" value="Yes"/>
+
+
+</bean>
+<bean id="m03" class="com.practicecheck.MovieCruiser.model.movie" >
+<property name="moviename" value="Gentle Man"/>
+<property name="boxoffice" value="100 Crore" />
+<property name="genere" value="Drama,Romance,Thriller"/>
+<property name="status" value="active"/>
+<property name="Launch" value="27/03/2017"/>
+<property name="favourite" value="No"/>
+
+</bean>
+
+
+<bean id="movieList" class="java.util.ArrayList">
+
+<constructor-arg>
+
+<list>
+
+<ref bean="m01"></ref>
+
+<ref bean="m02"></ref>
+
+<ref bean="m03"></ref>
+
+
+
+</list>
+
+</constructor-arg>
+
+</bean>
+</beans>

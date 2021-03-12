@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="m01" class="com.cognizant.truYum1.model.MenuItem">
+		<property name="id" value="1" />
+		<property name="name" value="Pizza" />
+		<property name="price" value="300" />
+		<property name="active" value="true" />
+		<property name="dateOfLaunch" value="04/03/2021" />
+		<property name="category" value="starter" />
+		<property name="freeDelivery" value="true" />
+	</bean>
+	<bean id="m02" class="com.cognizant.truYum1.model.MenuItem">
+		<property name="id" value="2" />
+		<property name="name" value="Burger" />
+		<property name="price" value="250.00" />
+		<property name="active" value="true" />
+		<property name="dateOfLaunch" value="22/02/2021" />
+		<property name="category" value="starter" />
+		<property name="freeDelivery" value="true" />
+	</bean>
+	<bean id="m03" class="com.cognizant.truYum1.model.MenuItem">
+		<property name="id" value="3" />
+		<property name="name" value="Chocolate Brownie" />
+		<property name="price" value="200.00" />
+		<property name="active" value="true" />
+		<property name="dateOfLaunch" value="05/02/2021" />
+		<property name="category" value="Dessert" />
+		<property name="freeDelivery" value="true" />
+	</bean>
+
+	<bean id="menuItemList" class="java.util.ArrayList">
+
+		<constructor-arg>
+
+			<list>
+
+				<ref bean="m01"></ref>
+
+				<ref bean="m02"></ref>
+
+				<ref bean="m03"></ref>
+
+			</list>
+
+		</constructor-arg>
+
+	</bean>
+</beans>
