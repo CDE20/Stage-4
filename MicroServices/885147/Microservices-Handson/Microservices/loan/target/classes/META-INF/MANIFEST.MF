@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: HP
+Build-Jdk: 10.0.2
+Implementation-Title: loan
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.cognizant
+Implementation-URL: https://spring.io/projects/spring-boot/loan
+Created-By: Maven Integration for Eclipse
+
