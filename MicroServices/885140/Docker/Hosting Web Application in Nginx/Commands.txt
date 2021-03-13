@@ -1,0 +1,15 @@
+
+
+- docker pull nginx:1.17.5
+- docker image ls
+- docker run --name my-nginx -d -p 8085:80 -v d:\docker-learn\html:/usr/share/nginx/html nginx:1.17.5
+- docker container ls
+- docker stop my-nginx
+- docker container ls
+- docker container ls -a
+- docker start my-nginx
+
+START DOCKER FROM DOCKER FILE
+- FROM nginx:1.17.5
+  COPY home.html /usr/share/nginx/html
+- docker build .
